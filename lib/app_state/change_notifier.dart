@@ -36,7 +36,7 @@ class AppProvider extends ChangeNotifier{
     notifyListeners();
   }
 
-  void playWin()async{
+  void playWin() async {
     try{
       await _audioPlayer.setAsset("assets/sounds/congrats.mp3");
       _audioPlayer.play();
